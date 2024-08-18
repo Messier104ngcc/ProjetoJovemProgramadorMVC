@@ -14,6 +14,10 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
-  background-color: aqua;
+    margin-bottom: 60px;
+    background-color: #18BEDB;
+}
+
+.btn btn-enter {
+    background-color: darkblue, 
 }
