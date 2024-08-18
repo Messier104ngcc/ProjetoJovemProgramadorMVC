@@ -1,7 +1,14 @@
+
+using Microsoft.EntityFrameworkCore;
+using ProjetoJovemProgramadorMVC.Date;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+var connectionstring = builder.Configuration.GetConnectionString("StringConexao");
+builder.Services.AddDbContext<BancoContexto>(options => options.UseSqlServer(connectionstring));
 
 var app = builder.Build();
 
