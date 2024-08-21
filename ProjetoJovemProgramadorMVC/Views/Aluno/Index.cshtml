@@ -1,28 +1,39 @@
 ﻿
+@model List<Aluno>
+
 
 <table class="table">
   <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
+@*     <tr>
+      <th scope="col">Matricula</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Cpf</th>
+    </tr> *@
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    Matricula
+                </div>
+                <div class="col">
+                    Nome
+                </div>
+                <div class="col">
+                    Cpf
+                </div>
+            </div>
+        </div>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td colspan="2">Larry the Bird</td>
-    </tr>
+        @if (Model != null && Model.Any())
+        {
+            foreach (Aluno aluno in Model)
+            {
+                <tr>
+                    <td>@aluno.Matricula</td>
+                    <td>@aluno.Nome</td>
+                    <td>@aluno.Cpf</td>
+                </tr>
+            }           
+        }
   </tbody>
 </table>
