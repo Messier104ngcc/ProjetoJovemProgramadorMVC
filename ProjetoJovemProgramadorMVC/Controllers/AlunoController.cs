@@ -15,5 +15,13 @@ namespace ProjetoJovemProgramadorMVC.Controllers
             var aluno = _alunoRepositorio.BuscarAlunos();
             return View(aluno);
         }
+
+        //criando uma ação para o botão ADICIONAR ALUNO já criado no index
+        public IActionResult AdicionarAluno() 
+        {
+            return View(); 
+        }
+            
+        
     }
 }
