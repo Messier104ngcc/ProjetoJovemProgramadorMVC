@@ -37,7 +37,7 @@ body {
 
 .container {
     padding: 23px;
-    margin: 32px;
+    margin: auto;
     background: rgba( 57, 41, 41, 0.15 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 3.5px );
@@ -56,30 +56,90 @@ body {
     grid-row-gap: 0px;
 }*/
 
-.nav-link.text-dark {
-    box-shadow: inset 0px 0px 0px -5px #9fb4f2;
-    background-color: #7892c2;
-    border-radius: 19px;
-    border: 1px solid #4e6096;
+.btn-home {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+    margin: 10px;
+}
+
+    .btn-home:hover {
+        background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+        background-color: #408c99;
+    }
+
+    .btn-home :active {
+        position: relative;
+        top: 1px;
+    }
+
+.btn-aluno {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 8px;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Arial;
-    font-size: 17px;
-    font-weight: bold;
-    padding: 1px 37px;
+    font-size: 15px;
+    font-weight: 10px;
+    padding: 5px 5px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #206de0;
+    text-shadow: 0px 1px 0px #3d768a;
+    margin: 10px;
 }
 
-.nav-link.text-dark:hover {
-    background-color: #476e9e;
+    .btn-aluno:hover {
+        background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+        background-color: #408c99;
+    }
+
+    .btn-aluno:active {
+        position: relative;
+        top: 1px;
+    }
+
+
+.btn-inicio {
+    box-shadow: 0px 10px 14px -7px #276873;
+    background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+    background-color: #599bb3;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: black;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #3d768a;
+    margin: 10px;
 }
 
-.nav-link.text-dark:active {
-    position: relative;
-    top: 1px;
-}
+    .btn-inicio:hover {
+        background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+        background-color: #408c99;
+    }
+
+    .btn-inicio:active {
+        position: relative;
+        top: 1px;
+    }
+   
+
+   
 
 .main {
     display: flex;
@@ -91,8 +151,9 @@ body {
     gap: 5px;
 }
 
-.nav-item {
+.nav-link {
     padding: 10px;
+    color: black;
 }
 
 
@@ -148,7 +209,7 @@ body {
             background-color: #0056b3;
         }
 
-.btn btn-primary {
+.btn-inserir {
     box-shadow: 0px 10px 14px -7px #276873;
     background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
     background-color: #599bb3;
@@ -162,4 +223,33 @@ body {
     padding: 13px 32px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #3d768a;
+}
+
+.menulink{
+    display: flex;
+    justify-content: flex-start;
+    position: page;
+    right: 1.5;
+}
+
+.container-menu {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.nav {
+    display: grid;
+    background-color: white;
+    align-items: center;
+    justify-content: normal;
+    grid-template-columns: auto;
+}
+
+
+.display-5 {      
+    position: absolute;  
+    left: 0;
+    font-size: 40px;
+    margin-left: 100xp;
 }

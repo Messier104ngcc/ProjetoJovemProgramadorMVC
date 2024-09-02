@@ -17,5 +17,13 @@ namespace ProjetoJovemProgramadorMVC.Date
         }
 
         public DbSet<Aluno> Aluno { get; set; }
+
+
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
+        //    optionsBuilder.UseSqlServer("Data Source=MESSIER104NGC\\\\SQLEXPRESS;Initial Catalog=WebSystem;Integrated Security=True;Trust Server Certificate=True");
+        //}
+
+        //public DbSet<Usuario> Usuarios { get; set; }
     }
 }

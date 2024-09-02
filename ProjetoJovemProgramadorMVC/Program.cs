@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using ProjetoJovemProgramadorMVC.Date;
 using ProjetoJovemProgramadorMVC.Date.Repositorio.Interfaceer;
 using ProjetoJovemProgramadorMVC.Date.Repositorio;
+using System.Security.Cryptography;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddDbContext<BancoContexto>(options => options.UseSqlServer(con
 builder.Services.AddScoped<IAlunoRepositorio, AlunoRepositorio>();
 
 var app = builder.Build();
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
