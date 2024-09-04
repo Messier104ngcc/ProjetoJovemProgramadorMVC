@@ -60,17 +60,18 @@ body {
     box-shadow: 0px 10px 14px -7px #276873;
     background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
     background-color: #599bb3;
-    border-radius: 8px;
+    border-radius: 20px;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 10px;
-    padding: 5px 5px;
+    padding: 1px 15px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #3d768a;
-    margin: 10px;
+    margin: 5px;
+    border-size: 0px;
 }
 
     .btn-home:hover {
@@ -87,17 +88,17 @@ body {
     box-shadow: 0px 10px 14px -7px #276873;
     background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
     background-color: #599bb3;
-    border-radius: 8px;
+    border-radius: 20px;
     display: inline-block;
     cursor: pointer;
     color: #ffffff;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 10px;
-    padding: 5px 5px;
+    padding: 1px 15px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #3d768a;
-    margin: 10px;
+    margin: 5px;
 }
 
     .btn-aluno:hover {
@@ -115,17 +116,17 @@ body {
     box-shadow: 0px 10px 14px -7px #276873;
     background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
     background-color: #599bb3;
-    border-radius: 8px;
+    border-radius: 20px;
     display: inline-block;
     cursor: pointer;
-    color: black;
-    font-family: Arial;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     font-weight: 10px;
-    padding: 5px 5px;
+    padding: 1px 15px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #3d768a;
-    margin: 10px;
+    margin: 5px;
 }
 
     .btn-inicio:hover {
@@ -216,11 +217,9 @@ body {
     border-radius: 8px;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: black;
     font-family: Arial;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 13px 32px;
+    font-size: 15px;
     text-decoration: none;
     text-shadow: 0px 1px 0px #3d768a;
 }
@@ -242,7 +241,7 @@ body {
     display: grid;
     background-color: white;
     align-items: center;
-    justify-content: normal;
+    justify-content: end;
     grid-template-columns: auto;
 }
 
@@ -253,3 +252,41 @@ body {
     font-size: 40px;
     margin-left: 100xp;
 }
+
+.div-menupage {
+    justify-content: end;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-enviar {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    border-radius: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000000;
+    background-color: #2254c9;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    transition: .4s;
+}
+
+    .btn-enviar:hover {
+        color: #ffffff;
+        background-color: #a69e9e;
+    }
